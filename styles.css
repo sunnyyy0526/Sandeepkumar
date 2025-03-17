@@ -1,0 +1,10 @@
+.harshitha{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+img{
+border:20px solid black;
+margin: 20px;
+padding: 20px;
+}
