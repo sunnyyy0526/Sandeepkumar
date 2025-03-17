@@ -1,0 +1,44 @@
+/*
+
+1)Select all paragraphs and give them a color: blue.
+2)Select only the paragraph inside .container and set font-weight: bold.
+3)Style the list item with class active to have a background color of yellow.
+4)Select all <li> elements inside #menu and set border-bottom: 1px solid gray.
+5)Change the text color of the <a> tag only when hovered (:hover).
+6)Style the first child (:first-child) of the <ul> with font-style: italic.
+7)Style the <input> with type="text" using attribute selectors and set border: 2px solid red.
+8)Style every other paragraph (:nth-child(even)) with a background color of lightgray.
+9)Use pseudo-elements (::before and ::after) to add content around the button.
+
+*/
+p {
+    color: blue;
+}
+.container p {
+    font-weight: bold;
+    color: red;
+}
+.active {
+    background-color: yellow;
+}
+#menu > li {
+    border-bottom: 1px solid gray;
+}
+a:hover {
+    color: red;
+}
+ul :first-child {
+    font-style: italic;
+}
+input[type="text"] {
+    border: 2px solid red
+}
+p:nth-child(even) {
+    background-color: lightgray;
+}
+button::before {
+    content: click me;
+}
+button::after {
+    content: click me;
+}
